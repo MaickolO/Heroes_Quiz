@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_completado"
+    tools:context=".respuesta_nivel1"
+    android:orientation="vertical">
+
+
+    <!-- Muy Bien -->
+    <LinearLayout
+        android:id="@+id/rpta_correcta_bien_hecho"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#020A40"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:shadowColor="@color/text_shadow_white"
+            android:shadowDx="-3"
+            android:shadowDy="-3"
+            android:shadowRadius="2"
+            android:text="@string/bien_hecho"
+            android:textColor="#148310"
+            android:textSize="36dp" />
+    </LinearLayout>
+
+
+    <!-- Cuerpo -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rpta_correcta_bien_hecho">
+
+        <!-- Nombre -->
+        <TextView
+            android:id="@+id/respuesta_texto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_herramientas_niveles"
+            android:fontFamily="@font/theboldfont"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="-3"
+            android:shadowDy="-3"
+            android:shadowRadius="2"
+            android:text="@string/respuesta_txt"
+            android:textColor="#4EAC28"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@id/parent_img_rpta_correcta"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+        <!-- Imagen -->
+        <LinearLayout
+            android:id="@+id/parent_img_rpta_correcta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/parent_oro_rpta_correcto"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/respuesta_texto">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_rpta_correcta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/respuesta_img"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:contentDescription="@string/imagen_respuesta"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prueba1" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <!-- Oro -->
+        <LinearLayout
+            android:id="@+id/parent_oro_rpta_correcto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/niveles_completados"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/parent_img_rpta_correcta">
+
+            <LinearLayout
+                android:id="@+id/rpta_correcta_layout_oro"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:background="@drawable/background_gold"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="-10dp"
+                    android:contentDescription="@string/imagen_moneda_rpta_correcta"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/monedas" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/theboldfont"
+                    android:gravity="center"
+                    android:text="@string/numero_monedas_ganas"
+                    android:textColor="#EEDFCB12"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Texto completado -->
+        <LinearLayout
+            android:id="@+id/niveles_completados"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/layout_btnContinuar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/parent_oro_rpta_correcto">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/completados_todos_niveles"
+                android:textColor="#4BBD31"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/nuevos_niveles"
+                android:textColor="#DC8F32"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Boton -->
+        <LinearLayout
+            android:id="@+id/layout_btnContinuar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/niveles_completados">
+
+            <android.widget.Button
+                android:id="@+id/btnContinuar"
+                style="@style/btn_color_style"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="@string/continuar"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

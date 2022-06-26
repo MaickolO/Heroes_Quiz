@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo1">
+
+    <!-- Menú Superior -->
+    <RelativeLayout
+        android:id="@+id/menu_superior_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#020730"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/btn_main_config"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:lottie_autoPlay="false"
+            app:lottie_fileName="lottie_configuracion.json"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_loop="false" />
+
+        <android.widget.Button
+            android:id="@+id/btn_main_coins"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/money_background"
+            android:clickable="true"
+            android:drawableStart="@drawable/coin"
+            android:drawableEnd="@drawable/plus"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:fontFamily="@font/theboldfont"
+            android:text="@string/monedas"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <!-- Nivel 1 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_nivel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@id/guide_main_line1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_superior_main">
+
+        <TextView
+            android:id="@+id/main_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/theboldfont"
+            android:gravity="center"
+            android:paddingHorizontal="15dp"
+            android:text="@string/titulo_minijuego1"
+            android:textColor="#3DC118"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/parent_img_main1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent_img_main1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/parent_btn_inicio"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/guide_main_tit2"
+            app:layout_constraintStart_toEndOf="@id/guide_main_tit1"
+            app:layout_constraintTop_toBottomOf="@+id/main_titulo">
+
+            <ImageView
+                android:id="@+id/main_lvl1_img1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_parent_image_main1"
+                android:contentDescription="@string/main_img1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prueba1"
+                app:layout_constraintBottom_toTopOf="@id/main_lvl1_img3"
+                app:layout_constraintEnd_toStartOf="@id/main_lvl1_img2"
+                app:layout_constraintStart_toStartOf="@id/parent_img_main1"
+                app:layout_constraintTop_toTopOf="@id/parent_img_main1" />
+
+            <ImageView
+                android:id="@+id/main_lvl1_img2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_parent_image_main1"
+                android:contentDescription="@string/main_img2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prueba2"
+                app:layout_constraintBottom_toTopOf="@id/main_lvl1_img4"
+                app:layout_constraintEnd_toEndOf="@id/parent_img_main1"
+                app:layout_constraintStart_toEndOf="@id/main_lvl1_img1"
+                app:layout_constraintTop_toTopOf="@id/parent_img_main1" />
+
+            <ImageView
+                android:id="@+id/main_lvl1_img3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_parent_image_main1"
+                android:contentDescription="@string/main_img3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prueba3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/main_lvl1_img4"
+                app:layout_constraintStart_toStartOf="@id/parent_img_main1"
+                app:layout_constraintTop_toBottomOf="@id/main_lvl1_img1" />
+
+            <ImageView
+                android:id="@+id/main_lvl1_img4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_parent_image_main1"
+                android:contentDescription="@string/main_img4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prueba4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/parent_img_main1"
+                app:layout_constraintStart_toEndOf="@id/main_lvl1_img3"
+                app:layout_constraintTop_toBottomOf="@id/main_lvl1_img2" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/circulo_nivel"
+                android:src="@drawable/circle_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toLeftOf="@id/guide_main_img1_imgdetail1"
+                app:layout_constraintRight_toRightOf="@id/guide_main_imag1_imgdetail12"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/main_numero_nivel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/theboldfont"
+                android:gravity="center"
+                android:text="@string/valor_nivel"
+                android:textColor="#073703"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toLeftOf="@id/guide_main_img1_imgdetail1"
+                app:layout_constraintRight_toRightOf="@id/guide_main_imag1_imgdetail12"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_main_img1_imgdetail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_main_imag1_imgdetail12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/parent_btn_inicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guide_main_tit4"
+            app:layout_constraintStart_toEndOf="@id/guide_main_tit3"
+            app:layout_constraintTop_toBottomOf="@+id/parent_img_main1">
+
+            <android.widget.Button
+                android:id="@+id/btnInicio_nivel1"
+                style="@style/btn_color_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/boton_minijuego2"
+                android:textSize="22dp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_main_tit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_main_tit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_main_tit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_main_tit4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Nivel 2 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_nivel2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@id/guide_main_line2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide_main_line3">
+
+        <TextView
+            android:id="@+id/main_titulo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/theboldfont"
+            android:gravity="center"
+            android:paddingHorizontal="15dp"
+            android:text="@string/titulo_minijuego2"
+            android:textColor="#C81B1B"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/parent_img_main2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent_img_main2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/parent_btn_inicio_nivel2"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/guide_sec_tit2"
+            app:layout_constraintStart_toEndOf="@id/guide_sec_tit1"
+            app:layout_constraintTop_toBottomOf="@+id/main_titulo2">
+
+            <ImageView
+                android:id="@+id/main_lvl2_img1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_parent_image_main2"
+                android:contentDescription="@string/main_img1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prueba1"
+                app:layout_constraintBottom_toTopOf="@id/main_lvl2_img3"
+                app:layout_constraintEnd_toStartOf="@id/main_lvl2_img2"
+                app:layout_constraintStart_toStartOf="@id/parent_img_main2"
+                app:layout_constraintTop_toTopOf="@id/parent_img_main2" />
+
+            <ImageView
+                android:id="@+id/main_lvl2_img2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_parent_image_main2"
+                android:contentDescription="@string/main_img2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prueba2"
+                app:layout_constraintBottom_toTopOf="@id/main_lvl2_img4"
+                app:layout_constraintEnd_toEndOf="@id/parent_img_main2"
+                app:layout_constraintStart_toEndOf="@id/main_lvl2_img1"
+                app:layout_constraintTop_toTopOf="@id/parent_img_main2" />
+
+            <ImageView
+                android:id="@+id/main_lvl2_img3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_parent_image_main2"
+                android:contentDescription="@string/main_img3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prueba3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/main_lvl2_img4"
+                app:layout_constraintStart_toStartOf="@id/parent_img_main2"
+                app:layout_constraintTop_toBottomOf="@id/main_lvl2_img1" />
+
+            <ImageView
+                android:id="@+id/main_lvl2_img4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_parent_image_main2"
+                android:contentDescription="@string/main_img4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prueba4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/parent_img_main2"
+                app:layout_constraintStart_toEndOf="@id/main_lvl2_img3"
+                app:layout_constraintTop_toBottomOf="@id/main_lvl2_img2" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/circulo_nivel"
+                android:src="@drawable/second_icon_big"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toLeftOf="@id/guide_main_img2_imgdetai1"
+                app:layout_constraintRight_toRightOf="@id/guide_main_img2_imgdetai2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/main_numero_nivel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/theboldfont"
+                android:gravity="center"
+                android:text="@string/valor_nivel"
+                android:textColor="#300208"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toLeftOf="@id/guide_main_img2_imgdetai1"
+                app:layout_constraintRight_toRightOf="@id/guide_main_img2_imgdetai2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_main_img2_imgdetai1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_main_img2_imgdetai2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/parent_btn_inicio_nivel2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guide_sec_tit4"
+            app:layout_constraintStart_toEndOf="@id/guide_sec_tit3"
+            app:layout_constraintTop_toBottomOf="@+id/parent_img_main2">
+
+            <android.widget.Button
+                android:id="@+id/btnInicio_nivel2"
+                style="@style/btn_main2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/boton_minijuego1"
+                android:textSize="22dp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_sec_tit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.01" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_sec_tit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.99" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_sec_tit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_sec_tit4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_main_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_main_line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_main_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

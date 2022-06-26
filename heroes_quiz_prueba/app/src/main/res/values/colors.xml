@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#437DB6</color>
+    <color name="palabra_completada">#000000</color>
+    <color name="borde_imagen">#ffffff</color>
+    <color name="borde_layout">#858484</color>
+    <color name="borde_option_text">#858484</color>
+    <color name="background_opcion">#FFFFFF</color>
+
+    <color name="config_enabled">#D80A1E53</color>
+    <color name="config_disabled">#D84E525E</color>
+
+    <color name="texto_completado">#ffffff</color>
+    <color name="texto_agregado">#4CAF50</color>
+    <color name="texto_opciones">#000000</color>
+    <color name="texto_incorrecto">#D50606</color>
+
+    <color name="fab1">#F13A3A</color>
+    <color name="fab2">#77CD58</color>
+
+    <color name="herramienta_button">#0F1F57</color>
+
+    <!-- Barra Superior -->
+    <color name="colorPrimaryDark">#6C63FF</color>
+    <!-- Barra Media -->
+    <color name="colorPrimary">#6C63FF</color>
+
+    <color name="colorAccent">#03DAC5</color>
+    <color name="fondo_niveles">#BBEDE8</color>
+
+    <!-- Shadow -->
+    <color name="light_font">#FBFBFB</color>
+    <color name="grey_font">#ff9e9e9e</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="text_shadow_white">#FFFFFF</color>
+
+</resources>

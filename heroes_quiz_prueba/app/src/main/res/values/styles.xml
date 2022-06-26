@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Layout_Completado">
+        <item name="autoSizeTextType"> uniform</item>
+
+        <item name="android:layout_marginTop">-2dp</item>
+        <item name="android:textColor">@color/texto_completado</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/theboldfont</item>
+        <item name="android:textSize">32dp </item>
+    </style>
+
+    <style name="Layout_opciones">
+        <item name="autoSizeTextType"> uniform</item>
+        <item name="android:layout_marginTop">-2dp</item>
+        <item name="android:textColor">@color/texto_opciones</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/theboldfont</item>
+        <item name="android:textSize">28dp </item>
+    </style>
+
+    <style name="bordes">
+        <item name="android:radius"> 10dp </item>
+    </style>
+
+
+    <style name="fullViewTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="herramientas_button">
+        <item name="android:textColor"> @color/white </item>
+        <item name="android:background"> @drawable/background_herramienta_button </item>
+        <item name="android:textAlignment"> center </item>
+        <item name="android:fontFamily"> @font/theboldfont </item>
+        <item name="android:textStyle"> bold </item>
+        <item name="android:textSize"> 20dp </item>
+        <item name="android:foreground"> ?attr/selectableItemBackgroundBorderless </item>
+        <item name="android:clickable"> true </item>
+        <item name="android:focusable"> true </item>
+    </style>
+
+    <style name = "btn_color_style">
+        <item name="android:shadowColor"> #A8A8A8 </item>
+        <item name="android:shadowDx"> 0 </item>
+        <item name="android:shadowDy"> 0 </item>
+        <item name="android:shadowRadius"> 5 </item>
+        <item name="android:background">@drawable/selector_button_nivel1</item>
+        <item name="android:layout_centerHorizontal"> true </item>
+        <item name="android:layout_centerVertical"> true </item>
+        <item name="android:textColor"> @color/white</item>
+        <item name="android:fontFamily"> @font/theboldfont </item>
+    </style>
+
+    <style name = "btn_main2">
+        <item name="android:shadowColor"> #A8A8A8 </item>
+        <item name="android:shadowDx"> 0 </item>
+        <item name="android:shadowDy"> 0 </item>
+        <item name="android:shadowRadius"> 5 </item>
+        <item name="android:background">@drawable/selector_button_nivel2</item>
+        <item name="android:layout_centerHorizontal"> true </item>
+        <item name="android:layout_centerVertical"> true </item>
+        <item name="android:textColor"> @color/white</item>
+        <item name="android:fontFamily"> @font/theboldfont </item>
+    </style>
+
+    <style name = "txt_add_monedas">
+        <item name="android:layout_gravity"> center </item>
+        <item name="android:background">@drawable/background_text_monedas</item>
+        <item name="android:focusable"> false </item>
+        <item name="android:drawableStart"> @drawable/coin </item>
+        <item name="android:text"> @string/monedas </item>
+        <item name="android:paddingStart"> 8dp </item>
+        <item name="android:paddingEnd"> 8dp </item>
+        <item name="android:textAlignment"> center </item>
+        <item name="android:textColor"> @color/white </item>
+        <item name="android:textStyle"> bold </item>
+        <item name="android:fontFamily"> @font/theboldfont </item>
+    </style>
+
+    <style name="completado_layout">
+        <item name="android:background"> @drawable/corner_radius_layout </item>
+    </style>
+
+    <style name="opciones_layout">
+        <item name="android:background"> @drawable/background_option_border </item>
+    </style>
+
+    <style name="SlidingDialogAnimation">
+        <item name="android:windowEnterAnimation"> @anim/slide_up </item>
+        <item name="android:windowExitAnimation"> @anim/slide_down </item>
+    </style>
+
+    <style name="SlidingDialogAnimation_img">
+        <item name="android:windowEnterAnimation"> @anim/fade_in </item>
+        <item name="android:windowExitAnimation"> @anim/fade_out </item>
+    </style>
+
+    <style name="SlidingDialogAnimation_coins">
+        <item name="android:windowEnterAnimation"> @anim/arriba_abajo </item>
+        <item name="android:windowExitAnimation"> @anim/volver_arriba_abajo </item>
+    </style>
+
+    <style name="NoBackgroundDialogTheme">
+        <item name="android:windowBackground"> @null </item>
+    </style>
+
+</resources>

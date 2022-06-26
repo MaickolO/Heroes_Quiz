@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.orizevtechnologies.quiz_app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/heroes_quiz_icono"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/heroes_quiz_icono"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quiz_app">
+        <!-- ID EJEMPLO: ca-app-pub-3940256099942544~3347511713 -->
+        <!-- ID APLICACION: ca-app-pub-8291876581767416~8560613116 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8291876581767416~8560613116" />
+
+        <activity
+            android:name="com.orizevtechnologies.quiz_app.politica_privacidad"
+            android:exported="false"
+            android:theme="@style/Theme.Quiz_app.NoActionBar" />
+        <activity
+            android:name="com.orizevtechnologies.quiz_app.configuracion"
+            android:exported="false"
+            android:theme="@style/Theme.Quiz_app.NoActionBar" />
+        <activity
+            android:name="com.orizevtechnologies.quiz_app.respuesta_nivel1"
+            android:exported="false"
+            android:theme="@style/Theme.Quiz_app.NoActionBar" />
+        <activity
+            android:name="com.orizevtechnologies.quiz_app.respuesta_nivel2"
+            android:exported="false"
+            android:theme="@style/Theme.Quiz_app.NoActionBar" />
+        <activity
+            android:name="com.orizevtechnologies.quiz_app.Nivel1"
+            android:exported="false"
+            android:theme="@style/Theme.Quiz_app.NoActionBar" />
+        <activity
+            android:name="com.orizevtechnologies.quiz_app.Nivel2"
+            android:exported="false"
+            android:theme="@style/Theme.Quiz_app.NoActionBar" />
+        <activity
+            android:name="com.orizevtechnologies.quiz_app.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Quiz_app.NoActionBar" />
+        <activity
+            android:name="com.orizevtechnologies.quiz_app.Carga"
+            android:exported="true"
+            android:theme="@style/Theme.Quiz_app.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <data android:scheme="mailto" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

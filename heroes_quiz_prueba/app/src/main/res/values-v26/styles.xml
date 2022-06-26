@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="herramientas_button">
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:autoSizeStepGranularity">2dp</item>
+        <item name="android:autoSizeMinTextSize">12dp</item>
+        <item name="android:autoSizeMaxTextSize">22dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/background_herramienta_button</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp </item>
+        <item name="android:layout_marginHorizontal">5dp</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="completado_layout">
+        <item name="android:background">@drawable/corner_radius_layout</item>
+    </style>
+
+    <style name="opciones_layout">
+        <item name="android:background">@drawable/background_option_border</item>
+    </style>
+
+    <style name="Layout_opciones">
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:autoSizeStepGranularity">2dp</item>
+        <item name="android:autoSizeMinTextSize">12dp</item>
+        <item name="android:autoSizeMaxTextSize">22dp</item>
+        <item name="android:layout_marginTop">-2dp</item>
+        <item name="android:textColor">@color/texto_opciones</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/theboldfont</item>
+        <item name="android:textSize">28dp</item>
+    </style>
+
+    <style name="Layout_Completado">
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:autoSizeStepGranularity">2dp</item>
+        <item name="android:autoSizeMinTextSize">12dp</item>
+        <item name="android:autoSizeMaxTextSize">22dp</item>
+        <item name="android:layout_marginTop">-2dp</item>
+        <item name="android:textColor">@color/texto_completado</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/theboldfont</item>
+        <item name="android:textSize">32dp</item>
+    </style>
+
+
+</resources>

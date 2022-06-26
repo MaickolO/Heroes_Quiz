@@ -1,0 +1,94 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name"> Heroes Quiz</string>
+
+    <string name="letra_prueba">A</string>
+    <string name="cuerpo_agregar">¿Quieres descubrir una letra correcta por 50 monedas?</string>
+    <string name="cuerpo_eliminar">¿Quieres eliminar las letras incorrectas por 150 monedas?</string>
+    <string name="cuerpo_pasar">¿Quieres completar el nivel por 200 monedas?</string>
+
+    <!--Shared Preferences -->
+    <string name="herramienta_agregar">50</string>
+    <string name="herramienta_eliminar">150</string>
+    <string name="herramienta_pasar">200</string>
+
+
+    <!--Shared Preferences -->
+    <string name="recompensa">recompensa</string>
+    <string name="nivel_actual">nivel_actual</string>
+    <string name="nivel_maximo">nivel_maximo</string>
+    <string name="nivel_actual_2">nivel_actual_2</string>
+    <string name="nivel_maximo_2">nivel_maximo_2</string>
+    <string name="estado_volumen">volumen</string>
+    <string name="enviar_mail">michaelorizev@gmail.com</string>
+
+    <string name="agregar">herramienta_agregar</string>
+    <string name="eliminar">herramienta_eliminar</string>
+    <string name="pasar">herramienta_pasar</string>
+
+    <string name="twitter">twitter</string>
+    <string name="whatsapp">whatsapp</string>
+    <string name="instagram">instagram</string>
+    <string name="facebook">facebook</string>
+    <string name="circulo_nivel">circulo_nivel</string>
+    <string name="valor_nivel">10</string>
+    <string name="monedas">1000</string>
+    <string name="conseguir_monedas">Conseguir Monedas</string>
+    <string name="titulo_minijuego1">4 Images 1 Hero</string>
+    <string name="titulo_minijuego2">4 Skills 1 Hero</string>
+    <string name="minijuego_completado">¡Minijuego Completado!</string>
+    <string name="img_minijuego1">img_minijuego!</string>
+    <string name="boton_minijuego1">Play Minigame 2</string>
+    <string name="boton_minijuego2">Play Minigame 1</string>
+    <string name="bien_hecho">¡Bien Hecho!</string>
+    <string name="respuesta_txt">Shadow Shaman</string>
+    <string name="imagen_respuesta">imagen_respuesta</string>
+    <string name="imagen_moneda_rpta_correcta">imagen_moneda_rpta_correcta</string>
+    <string name="numero_monedas_ganas">+5</string>
+    <string name="completados_todos_niveles">Ha Completado todos los niveles</string>
+    <string name="felicidades">¡Felicidades!</string>
+    <string name="nuevos_niveles">¡Pronto se agregarán nuevos niveles!</string>
+    <string name="continuar">Continuar</string>
+    <string name="version">Versión 2.0.0</string>
+    <string name="configuracion_contacto">Contacto</string>
+    <string name="configuracion_politica_privacidad">Política de Privacidad</string>
+    <string name="configuracion_compartir">Compartir</string>
+    <string name="configuracion_sonido">Sonido</string>
+    <string name="configuracion_titulo">Configuración</string>
+    <string name="politica_subtitulo">Política de protección de datos para juegos</string>
+    <string name="img_dialog">img_dialog</string>
+    <string name="aumentar_monedas_facebook">Compartir en Facebook</string>
+    <string name="aumentar_monedas_twitter">Compartir en Twitter</string>
+    <string name="aumentar_monedas_whatsapp">Compartir en Whatsapp</string>
+    <string name="aumentar_monedas_video_publicidad">Ver un Video Publicitario</string>
+    <string name="monedas_50">+50</string>
+    <string name="monedas_20">+20</string>
+    <string name="aumentar_monedas_instagram">Compartir en Instagram</string>
+    <string name="img_twitter_oro">twitter_oro</string>
+    <string name="facebook_oro">facebook_oro</string>
+    <string name="isntagram_oro">isntagram_oro</string>
+    <string name="instagram_facebook">instagram_facebook</string>
+    <string name="video_publicidad_oro">video_publicidad_oro</string>
+    <string name="instrucciones_titulo">¿Cómo Jugar?</string>
+    <string name="instrucciones_cuerpo">En cada nivel se presentan 4 fotografías que tienen un héroe en común, el juego consiste en adivinar el nombre del héroe que se relaciona con esas cuatro fotos.</string>
+    <string name="main_img1" tools:ignore="Typos">main_img1</string>
+    <string name="main_img2">main_img2</string>
+    <string name="main_img3">main_img3</string>
+    <string name="main_img4">main_img4</string>
+    <string name="titulo_app">Dota 2: Heroes Quiz</string>
+
+    <string name="texto_herramienta_agregar">¿Quieres descubrir una letra correcta por 50 monedas?</string>
+    <string name="texto_herramienta_eliminar">¿Quieres eliminar las letras incorrectas por 150 monedas?</string>
+    <string name="texto_herramienta_pasar">¿Quieres completar el nivel por 200 monedas?</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+

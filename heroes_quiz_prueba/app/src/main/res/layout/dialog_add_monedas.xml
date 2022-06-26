@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dialog_add_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <android.widget.Button
+            android:id="@+id/txt_monedas"
+            style="@style/txt_add_monedas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="7dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal1"
+            app:layout_constraintDimensionRatio="3.5:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/share_twitter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/selector_background_add_monedas"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/horizontal2"
+            
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/vertical1"
+            app:layout_constraintTop_toBottomOf="@id/horizontal1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgTwitter"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/money_20"
+                app:layout_constraintBottom_toTopOf="@+id/txtTwitter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/txtTwitter"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/theboldfont"
+                android:gravity="center"
+                android:text="Compartir en Twitter"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgTwitter" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/share_facebook"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/selector_background_add_monedas"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/horizontal2"
+            app:layout_constraintLeft_toRightOf="@id/vertical1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontal1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgfacebook"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/money_20"
+                app:layout_constraintBottom_toTopOf="@+id/txtfacebook"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/txtfacebook"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/theboldfont"
+                android:gravity="center"
+                android:text="Compartir en Facebook"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgfacebook" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/share_whatsapp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_background_add_monedas"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/horizontal3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/vertical1"
+            app:layout_constraintTop_toBottomOf="@id/horizontal2">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgWhatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/money_20"
+                app:layout_constraintBottom_toTopOf="@+id/txtWhatsapp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/txtWhatsapp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/theboldfont"
+                android:gravity="center"
+                android:text="Compartir en Wharsapp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgWhatsapp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reward_video"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_background_add_monedas"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/horizontal3"
+            app:layout_constraintLeft_toRightOf="@id/vertical1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontal2">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgVideo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/money_50"
+                app:layout_constraintBottom_toTopOf="@+id/txtvideo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/txtvideo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/theboldfont"
+                android:gravity="center"
+                android:text="Ver un Video"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgVideo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnSalir"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="btnOK"
+            android:src="@drawable/close"
+            app:backgroundTint="#112337"
+            app:fabCustomSize="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontal3"
+            app:tint="@null" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.47" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.86" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

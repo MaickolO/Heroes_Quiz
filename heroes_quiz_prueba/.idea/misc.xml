@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/heroes_quiz_prueba/app/src/main/res/layout/activity_carga.xml" value="0.153125" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/heroes_quiz_prueba/app/src/main/res/layout/activity_configuracion.xml" value="0.16" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/heroes_quiz_prueba/app/src/main/res/layout/activity_main.xml" value="0.153125" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/heroes_quiz_prueba/app/src/main/res/layout/activity_nivel2.xml" value="0.153125" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/heroes_quiz_prueba/app/src/main/res/layout/activity_niveles.xml" value="0.1" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/heroes_quiz_prueba/app/src/main/res/layout/activity_respuesta_nivel2.xml" value="0.15" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1455" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_add_monedas.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_add_monedas_diaable.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_add_monedas_touch.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_gold.xml" value="0.1435" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_herramienta_button.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_herramientas_niveles.xml" value="0.1445" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_niveles.xml" value="0.1455" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_option_border.xml" value="0.1435" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_option_text.xml" value="0.18" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_parent_image.xml" value="0.148" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_parent_image_main1.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_parent_image_main2.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/background_text_monedas.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/button_aceptar_selector.xml" value="0.1435" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/button_next.xml" value="0.1435" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/button_principal_background1.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/button_principal_background2.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/button_secundario_background1.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/button_secundariol_background2.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/corner_radius_border.xml" value="0.1435" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/corner_radius_layout.xml" value="0.1435" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1445" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/money_background.xml" value="0.144" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/selector_background_add_monedas.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/selector_button_nivel1.xml" value="0.14" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/selector_button_nivel2.xml" value="0.1495" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/shake.xml" value="0.1445" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/drawable/styleb_button_next.xml" value="0.1435" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/font/font.xml" value="0.234375" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout-v26/activity_niveles.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/activity_aumentar_monedas.xml" value="0.22" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/activity_carga.xml" value="0.18" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/activity_configuracion.xml" value="0.18" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/activity_elegir_niveles.xml" value="0.18" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/activity_full_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/activity_nivel.xml" value="1.3464285714285715" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/activity_nivel_final.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/activity_niveles.xml" value="0.18" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/activity_politica_privacidad.xml" value="0.25" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/activity_respuesta_correcta.xml" value="0.14" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/custom_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/dialog_add_monedas.xml" value="0.2" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/dialog_buttons.xml" value="0.153125" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/dialog_herramientas.xml" value="0.153125" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/dialog_rpta_correcto.xml" value="0.16" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/exit_dialog.xml" value="0.153125" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/fragment_dialog_img.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USUARIO/AndroidStudioProjects/quiz_app/app/src/main/res/layout/full_img.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
